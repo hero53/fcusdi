@@ -123,6 +123,9 @@ body {
 .match-card {
     transition: all 0.3s ease;
     background: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .match-card:hover {
