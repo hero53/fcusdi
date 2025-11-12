@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC - Site Officiel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/360px-Liverpool_FC.svg.png" alt="Liverpool FC" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Actualités</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Calendrier</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Résultats</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Équipes</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Billetterie</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Boutique</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Plus</a></li>
+                </ul>
+            </div>
+            <!-- <div class="d-flex align-items-center">
+                <select class="form-select form-select-sm bg-transparent text-white border-0 me-3">
+                    <option>FR</option>
+                </select>
+                <button class="btn btn-link text-white"><i class="fas fa-search"></i></button>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <!-- <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-image position-relative">
+                        <div class="overlay"></div>
+                        <img src="assets/images/2025111195baace0d21300a536d37b5f9f7c1a1446d66e1ba2fabd0f184e7dfd970fbd88/fb_img_1762634547363_54910567669_l.jpg" class="w-100 hero-img" alt="Van Dijk">
+                        <div class="hero-content position-absolute bottom-0 start-0 p-5">
+                            <span class="badge bg-white text-dark mb-2">RAPPORT DE MATCH</span>
+                            <h1 class="text-white display-4 fw-bold">Rapport de Match:<br>
+                            Van Dijk décide du derby<br>
+                            de la FA Cup</h1>
+                            <button class="btn btn-danger mt-3">LIRE PLUS <i class="fas fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero-image position-relative">
+                        <div class="overlay"></div>
+                        <img src="https://fcusdi.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-06-at-22.51.40-scaled.jpeg" class="w-100 hero-img" alt="Stadium">
+                        <div class="hero-content position-absolute bottom-0 start-0 p-5">
+                            <span class="badge bg-danger text-white mb-2">ANFIELD</span>
+                            <h1 class="text-white display-4 fw-bold">Voici Anfield:<br>
+                            Domicile des Reds<br>
+                            Depuis 1892</h1>
+                            <button class="btn btn-danger mt-3">DÉCOUVRIR PLUS <i class="fas fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero-image position-relative">
+                        <div class="overlay"></div>
+                        <img src="https://fcusdi.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-06-at-22.51.39-scaled.jpeg" class="w-100 hero-img" alt="Training">
+                        <div class="hero-content position-absolute bottom-0 start-0 p-5">
+                            <span class="badge bg-white text-dark mb-2">ENTRAÎNEMENT</span>
+                            <h1 class="text-white display-4 fw-bold">Dans les coulisses:<br>
+                            Entraînement de l'équipe première<br>
+                            à Melwood</h1>
+                            <button class="btn btn-danger mt-3">REGARDER MAINTENANT <i class="fas fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <!-- <div class="carousel-item">
+                    <div class="hero-image position-relative">
+                        <div class="overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=2070" class="w-100 hero-img" alt="Celebration">
+                        <div class="hero-content position-absolute bottom-0 start-0 p-5">
+                            <span class="badge bg-danger text-white mb-2">FAITS SAILLANTS</span>
+                            <h1 class="text-white display-4 fw-bold">Ligue des Champions:<br>
+                            Le parcours de Liverpool<br>
+                            vers la gloire</h1>
+                            <button class="btn btn-danger mt-3">VOIR LES FAITS SAILLANTS <i class="fas fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Match Schedule Section -->
+    <section class="match-schedule py-5 bg-white">
+        <div class="container">
+            <h2 class="text-uppercase fw-bold mb-4">Calendrier des Matchs</h2>
+            <div class="row g-3">
+                <!-- Match 1 -->
+                <div class="col-md-3">
+                    <div class="match-card p-3 border rounded">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/100px-Liverpool_FC.svg.png" width="40" alt="Liverpool">
+                            <span class="text-danger fw-bold fs-5">3 : 1</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/100px-Everton_FC_logo.svg.png" width="40" alt="Everton">
+                        </div>
+                        <div class="text-center">
+                            <p class="small text-muted mb-1">Liverpool FC v Everton</p>
+                            <p class="small text-muted">Premier League - Anfield</p>
+                            <span class="badge bg-danger">FT</span>
+                        </div>
+                        <button class="btn btn-outline-danger btn-sm w-100 mt-2">CENTRE DE MATCH</button>
+                    </div>
+                </div>
+                <!-- Match 2 -->
+                <div class="col-md-3">
+                    <div class="match-card p-3 border rounded">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/100px-Liverpool_FC.svg.png" width="40" alt="Liverpool">
+                            <span class="text-muted fs-5">vs</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/100px-Manchester_City_FC_badge.svg.png" width="40" alt="Man City">
+                        </div>
+                        <div class="text-center">
+                            <p class="small text-muted mb-1">Liverpool FC v Manchester City</p>
+                            <p class="small text-muted">Ligue des Champions UEFA</p>
+                            <p class="small fw-bold">Mer 10 Avril - 20:00</p>
+                        </div>
+                        <button class="btn btn-danger btn-sm w-100 mt-2">ACHETER DES BILLETS</button>
+                    </div>
+                </div>
+                <!-- Match 3 -->
+                <div class="col-md-3">
+                    <div class="match-card p-3 border rounded">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/100px-Liverpool_FC.svg.png" width="40" alt="Liverpool">
+                            <span class="text-muted fs-5">vs</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/100px-FC_Barcelona_%28crest%29.svg.png" width="40" alt="Barcelona">
+                        </div>
+                        <div class="text-center">
+                            <p class="small text-muted mb-1">Liverpool FC v Barcelona</p>
+                            <p class="small text-muted">Ligue des Champions UEFA</p>
+                            <p class="small fw-bold">Mer 1 Mai - 20:00</p>
+                            <span class="badge bg-success">HOSPITALITÉ</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Match 4 -->
+                <div class="col-md-3">
+                    <div class="match-card p-3 border rounded">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/100px-Liverpool_FC.svg.png" width="40" alt="Liverpool">
+                            <span class="text-muted fs-5">vs</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/West_Bromwich_Albion.svg/100px-West_Bromwich_Albion.svg.png" width="40" alt="West Brom">
+                        </div>
+                        <div class="text-center">
+                            <p class="small text-muted mb-1">Liverpool FC v West Bromwich</p>
+                            <p class="small text-muted">Quatrième Tour de la FA Cup</p>
+                            <p class="small fw-bold">Sam 27 Janvier - 20:00</p>
+                            <span class="badge bg-info text-white">HOSPITALITÉ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Videos Section -->
+    <section class="featured-videos py-5 bg-light">
+        <div class="container">
+            <h2 class="text-uppercase fw-bold mb-4">Vidéos Récapitulatives</h2>
+            <div class="row g-3" id="training-videos-container">
+                <!-- Training videos will be dynamically loaded from YouTube -->
+                <div class="col-md-4">
+                    <div class="video-card position-relative" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=YUY_0kTs01k', '_blank')">
+                        <img src="https://img.youtube.com/vi/YUY_0kTs01k/maxresdefault.jpg" class="w-100 rounded" style="height: 250px; object-fit: cover;" alt="Benfica vs FC USDI">
+                        <div class="video-overlay position-absolute bottom-0 p-3 text-white">
+                            <h5>Benfica Côte-d'Ivoire 1-1 FC USDI (Match complet)</h5>
+                            <button class="btn btn-link text-white p-0"><i class="fas fa-play-circle fa-2x"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="video-card position-relative" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=U4RI5wFUOug', '_blank')">
+                        <img src="https://img.youtube.com/vi/U4RI5wFUOug/maxresdefault.jpg" class="w-100 rounded" style="height: 250px; object-fit: cover;" alt="Benfica vs FC USDI Highlights">
+                        <div class="video-overlay position-absolute bottom-0 p-3 text-white">
+                            <h5>Benfica Côte-d'Ivoire 1-1 FC USDI (Résumé Match retour)</h5>
+                            <button class="btn btn-link text-white p-0"><i class="fas fa-play-circle fa-2x"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="video-card position-relative" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/watch?v=SlErAvpY-5M', '_blank')">
+                        <img src="https://img.youtube.com/vi/SlErAvpY-5M/maxresdefault.jpg" class="w-100 rounded" style="height: 250px; object-fit: cover;" alt="FC USDI vs Benfica">
+                        <div class="video-overlay position-absolute bottom-0 p-3 text-white">
+                            <h5>FC USDI 1-1 BENFICA CÔTE-D'IVOIRE (Résumé)</h5>
+                            <button class="btn btn-link text-white p-0"><i class="fas fa-play-circle fa-2x"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="latest-news py-5 bg-white">
+        <div class="container">
+            <h2 class="text-uppercase fw-bold mb-4">Dernières Actualités</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <div class="news-image-wrapper position-relative bg-danger p-5 rounded">
+                            <span class="badge bg-white text-dark position-absolute top-0 start-0 m-3">ACTUALITÉS</span>
+                            <div class="text-white text-center">
+                                <p class="small">LIVERPOOL FOOTBALL CLUB</p>
+                                <h4>Nouvelles de l'équipe: Van Dijk & Firmino présents; Coutinho absent pour la FA Cup</h4>
+                                <div class="d-flex align-items-center justify-content-center mt-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/50px-Liverpool_FC.svg.png" width="30" alt="LFC">
+                                    <span class="ms-2">Liverpool FC<br><small>Il y a 1 heure</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?q=80&w=1623" class="w-100 rounded mb-3" style="height: 200px; object-fit: cover;" alt="">
+                        <span class="badge bg-dark mb-2">VIDÉO</span>
+                        <h5>Klopp ressent un fort désir d'atteindre sa quatrième finale européenne dans une compétition intense</h5>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/30px-Liverpool_FC.svg.png" width="20" alt="LFC">
+                            <span class="ms-2 small text-muted">Liverpool FC<br>Il y a 3 heures</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-card bg-dark text-white p-4 rounded h-100">
+                        <span class="badge bg-danger mb-3">ACADÉMIE</span>
+                        <h5>Les U23 de Liverpool se qualifient pour les phases à élimination directe</h5>
+                        <h6 class="mt-4">90 moments historiques</h6>
+                        <div class="d-flex align-items-center mt-auto pt-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/30px-Liverpool_FC.svg.png" width="20" alt="LFC">
+                            <span class="ms-2 small">Liverpool FC<br>Il y a 10 heures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LFC Players Section -->
+    <section class="lfc-players py-5 bg-light">
+        <div class="container">
+            <h2 class="text-uppercase fw-bold mb-4">Joueurs LFC</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Player Detail Carousel -->
+                    <div class="swiper playerDetailSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Player 1 - Mohamed Salah -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #f0f0f0 0%, #d0d0d0 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-danger"></i>
+                                                    <p class="mt-2 text-secondary">Mohamed Salah</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-danger fs-1 fw-bold">#11</span>
+                                            <h3 class="fw-bold">Mohamed<br>Salah</h3>
+                                            <p class="text-muted small">Ailier droit/Attaquant</p>
+                                            <p class="small">Âge: 25 | Nationalité: Égypte<br>
+                                            Taille: 175cm | Poids: 71kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Buts</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 80%"></div>
+                                                    </div>
+                                                    <span>29%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Passes D.</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 60%"></div>
+                                                    </div>
+                                                    <span>17%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-danger mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player 2 - Roberto Firmino -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #e8f5e9 0%, #a5d6a7 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-success"></i>
+                                                    <p class="mt-2 text-secondary">Roberto Firmino</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-success fs-1 fw-bold">#9</span>
+                                            <h3 class="fw-bold">Roberto<br>Firmino</h3>
+                                            <p class="text-muted small">Attaquant/Milieu</p>
+                                            <p class="small">Âge: 27 | Nationalité: Brésil<br>
+                                            Taille: 181cm | Poids: 76kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Buts</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-success" style="width: 65%"></div>
+                                                    </div>
+                                                    <span>22%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Passes D.</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-success" style="width: 75%"></div>
+                                                    </div>
+                                                    <span>24%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-success mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player 3 - Sadio Mané -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #f0f0f0 0%, #d0d0d0 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-danger"></i>
+                                                    <p class="mt-2 text-secondary">Sadio Mané</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-danger fs-1 fw-bold">#19</span>
+                                            <h3 class="fw-bold">Sadio<br>Mané</h3>
+                                            <p class="text-muted small">Ailier gauche</p>
+                                            <p class="small">Âge: 26 | Nationalité: Sénégal<br>
+                                            Taille: 175cm | Poids: 69kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Buts</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 75%"></div>
+                                                    </div>
+                                                    <span>26%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Passes D.</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 55%"></div>
+                                                    </div>
+                                                    <span>15%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-danger mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player 4 - Jordan Henderson -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #f0f0f0 0%, #d0d0d0 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-danger"></i>
+                                                    <p class="mt-2 text-secondary">Jordan Henderson</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-danger fs-1 fw-bold">#14</span>
+                                            <h3 class="fw-bold">Jordan<br>Henderson</h3>
+                                            <p class="text-muted small">Milieu/Capitaine</p>
+                                            <p class="small">Âge: 28 | Nationalité: Angleterre<br>
+                                            Taille: 182cm | Poids: 80kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Buts</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 30%"></div>
+                                                    </div>
+                                                    <span>8%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Passes D.</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 70%"></div>
+                                                    </div>
+                                                    <span>20%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-danger mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player 5 - Virgil van Dijk -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #e3f2fd 0%, #90caf9 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-primary"></i>
+                                                    <p class="mt-2 text-secondary">Virgil van Dijk</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-primary fs-1 fw-bold">#4</span>
+                                            <h3 class="fw-bold">Virgil<br>van Dijk</h3>
+                                            <p class="text-muted small">Défenseur central</p>
+                                            <p class="small">Âge: 29 | Nationalité: Pays-Bas<br>
+                                            Taille: 193cm | Poids: 92kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Buts</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-primary" style="width: 15%"></div>
+                                                    </div>
+                                                    <span>4%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Défense</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-primary" style="width: 95%"></div>
+                                                    </div>
+                                                    <span>95%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player 6 - Alisson Becker -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffb74d 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-warning"></i>
+                                                    <p class="mt-2 text-secondary">Alisson Becker</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-warning fs-1 fw-bold">#1</span>
+                                            <h3 class="fw-bold">Alisson<br>Becker</h3>
+                                            <p class="text-muted small">Gardien de but</p>
+                                            <p class="small">Âge: 29 | Nationalité: Brésil<br>
+                                            Taille: 191cm | Poids: 91kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Arrêts</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-warning" style="width: 85%"></div>
+                                                    </div>
+                                                    <span>85%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Clean Sh.</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-warning" style="width: 78%"></div>
+                                                    </div>
+                                                    <span>78%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-warning mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player 7 - Trent Alexander -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #e0f7fa 0%, #4dd0e1 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-info"></i>
+                                                    <p class="mt-2 text-secondary">Trent Alexander</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-info fs-1 fw-bold">#66</span>
+                                            <h3 class="fw-bold">Trent<br>Alexander</h3>
+                                            <p class="text-muted small">Latéral droit</p>
+                                            <p class="small">Âge: 23 | Nationalité: Angleterre<br>
+                                            Taille: 180cm | Poids: 76kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Passes</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-info" style="width: 88%"></div>
+                                                    </div>
+                                                    <span>88%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Passes D.</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-info" style="width: 92%"></div>
+                                                    </div>
+                                                    <span>32%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-info mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player 8 - Thiago Alcântara -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #e0e0e0 0%, #9e9e9e 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-secondary"></i>
+                                                    <p class="mt-2 text-secondary">Thiago Alcântara</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-secondary fs-1 fw-bold">#6</span>
+                                            <h3 class="fw-bold">Thiago<br>Alcântara</h3>
+                                            <p class="text-muted small">Milieu central</p>
+                                            <p class="small">Âge: 30 | Nationalité: Espagne<br>
+                                            Taille: 174cm | Poids: 70kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Passes</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-secondary" style="width: 94%"></div>
+                                                    </div>
+                                                    <span>94%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Vision</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-secondary" style="width: 96%"></div>
+                                                    </div>
+                                                    <span>96%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-secondary mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player 9 - Diogo Jota -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #f0f0f0 0%, #d0d0d0 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-danger"></i>
+                                                    <p class="mt-2 text-secondary">Diogo Jota</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-danger fs-1 fw-bold">#20</span>
+                                            <h3 class="fw-bold">Diogo<br>Jota</h3>
+                                            <p class="text-muted small">Attaquant</p>
+                                            <p class="small">Âge: 25 | Nationalité: Portugal<br>
+                                            Taille: 178cm | Poids: 73kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Buts</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 70%"></div>
+                                                    </div>
+                                                    <span>24%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Finition</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 82%"></div>
+                                                    </div>
+                                                    <span>82%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-danger mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player 10 - Luis Díaz -->
+                            <div class="swiper-slide">
+                                <div class="player-feature bg-white rounded p-0 overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <div style="background: linear-gradient(135deg, #e8f5e9 0%, #a5d6a7 100%); height: 350px; display: flex; align-items: center; justify-content: center;">
+                                                <div class="text-center">
+                                                    <i class="fas fa-user-circle fa-5x text-success"></i>
+                                                    <p class="mt-2 text-secondary">Luis Díaz</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-4 d-flex flex-column justify-content-center">
+                                            <span class="text-success fs-1 fw-bold">#23</span>
+                                            <h3 class="fw-bold">Luis<br>Díaz</h3>
+                                            <p class="text-muted small">Ailier gauche</p>
+                                            <p class="small">Âge: 26 | Nationalité: Colombie<br>
+                                            Taille: 180cm | Poids: 72kg</p>
+                                            <div class="stats mt-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Buts</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-success" style="width: 62%"></div>
+                                                    </div>
+                                                    <span>18%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Dribbles</span>
+                                                    <div class="progress flex-grow-1 mx-3" style="height: 10px;">
+                                                        <div class="progress-bar bg-success" style="width: 89%"></div>
+                                                    </div>
+                                                    <span>89%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-success mt-4">VOIR LE PROFIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="player-stats-section position-relative" style="padding: 0 50px;">
+                        <!-- Player Cards Carousel -->
+                        <div class="swiper playerCardsSwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Card 1 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-danger mb-2"></i>
+                                        <p class="small fw-bold mb-1">Mohamed Salah</p>
+                                        <span class="badge bg-danger">11</span>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-success mb-2"></i>
+                                        <p class="small fw-bold mb-1">Roberto Firmino</p>
+                                        <span class="badge bg-success">9</span>
+                                    </div>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-danger mb-2"></i>
+                                        <p class="small fw-bold mb-1">Sadio Mané</p>
+                                        <span class="badge bg-danger">19</span>
+                                    </div>
+                                </div>
+                                <!-- Card 4 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-danger mb-2"></i>
+                                        <p class="small fw-bold mb-1">Jordan Henderson</p>
+                                        <span class="badge bg-danger">14</span>
+                                    </div>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-primary mb-2"></i>
+                                        <p class="small fw-bold mb-1">Virgil van Dijk</p>
+                                        <span class="badge bg-primary">4</span>
+                                    </div>
+                                </div>
+                                <!-- Card 6 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-warning mb-2"></i>
+                                        <p class="small fw-bold mb-1">Alisson Becker</p>
+                                        <span class="badge bg-warning">1</span>
+                                    </div>
+                                </div>
+                                <!-- Card 7 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-info mb-2"></i>
+                                        <p class="small fw-bold mb-1">Trent Alexander</p>
+                                        <span class="badge bg-info">66</span>
+                                    </div>
+                                </div>
+                                <!-- Card 8 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-secondary mb-2"></i>
+                                        <p class="small fw-bold mb-1">Thiago Alcântara</p>
+                                        <span class="badge bg-secondary">6</span>
+                                    </div>
+                                </div>
+                                <!-- Card 9 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-danger mb-2"></i>
+                                        <p class="small fw-bold mb-1">Diogo Jota</p>
+                                        <span class="badge bg-danger">20</span>
+                                    </div>
+                                </div>
+                                <!-- Card 10 -->
+                                <div class="swiper-slide">
+                                    <div class="text-center" style="background: #f5f5f5; padding: 20px; border-radius: 10px;">
+                                        <i class="fas fa-user-circle fa-3x text-success mb-2"></i>
+                                        <p class="small fw-bold mb-1">Luis Díaz</p>
+                                        <span class="badge bg-success">23</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="player-cards-prev" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 10; cursor: pointer; background: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                <i class="fas fa-chevron-left text-danger"></i>
+                            </div>
+                            <div class="player-cards-next" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 10; cursor: pointer; background: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                <i class="fas fa-chevron-right text-danger"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Shop Section -->
+    <section class="shop-section py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="display-5 fw-bold mb-4">RENOUVELEZ VOTRE GARDE-ROBE</h2>
+                    <button class="btn btn-white btn-lg">ACHETER MAINTENANT <i class="fas fa-arrow-right ms-2"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-3">
+                        <div class="col-4">
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <i class="fas fa-tshirt fa-3x text-danger"></i>
+                                <p class="mt-2 small text-dark">Tenue Domicile</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <i class="fas fa-tshirt fa-3x text-dark"></i>
+                                <p class="mt-2 small text-dark">Tenue Extérieur</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <i class="fas fa-tshirt fa-3x text-warning"></i>
+                                <p class="mt-2 small text-dark">Troisième Tenue</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="photo-gallery py-5 bg-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="text-uppercase fw-bold mb-0">Galerie Photos</h2>
+                <a href="https://www.flickr.com/photos/202598756@N03/albums/72177720330182605/" target="_blank" class="btn btn-danger">
+                    VOIR PLUS <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-3 col-sm-6">
+                    <div class="gallery-card position-relative overflow-hidden">
+                        <img src="https://live.staticflickr.com/65535/54234464788_de4b5a8b07_c.jpg" class="w-100 rounded gallery-img" style="height: 250px; object-fit: cover;" alt="Liverpool FC">
+                        <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="gallery-card position-relative overflow-hidden">
+                        <img src="https://live.staticflickr.com/65535/54234738655_f9e96cde69_c.jpg" class="w-100 rounded gallery-img" style="height: 250px; object-fit: cover;" alt="Liverpool FC">
+                        <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="gallery-card position-relative overflow-hidden">
+                        <img src="https://live.staticflickr.com/65535/54234592854_5472b31cc4_c.jpg" class="w-100 rounded gallery-img" style="height: 250px; object-fit: cover;" alt="Liverpool FC">
+                        <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="gallery-card position-relative overflow-hidden">
+                        <img src="https://live.staticflickr.com/65535/54234738580_01a03ecf59_c.jpg" class="w-100 rounded gallery-img" style="height: 250px; object-fit: cover;" alt="Liverpool FC">
+                        <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="gallery-card position-relative overflow-hidden">
+                        <img src="https://live.staticflickr.com/65535/54234464688_d23bc17bf7_c.jpg" class="w-100 rounded gallery-img" style="height: 250px; object-fit: cover;" alt="Liverpool FC">
+                        <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="gallery-card position-relative overflow-hidden">
+                        <img src="https://live.staticflickr.com/65535/54234592754_b67e9abf1c_c.jpg" class="w-100 rounded gallery-img" style="height: 250px; object-fit: cover;" alt="Liverpool FC">
+                        <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="gallery-card position-relative overflow-hidden">
+                        <img src="https://live.staticflickr.com/65535/54233313647_b0fb6a6ebd_c.jpg" class="w-100 rounded gallery-img" style="height: 250px; object-fit: cover;" alt="Liverpool FC">
+                        <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="gallery-card position-relative overflow-hidden">
+                        <img src="https://live.staticflickr.com/65535/54234464598_c0e9c1a7f1_c.jpg" class="w-100 rounded gallery-img" style="height: 250px; object-fit: cover;" alt="Liverpool FC">
+                        <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-search-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LFC Recommends Section -->
+    <section class="lfc-recommends py-5 bg-light">
+        <div class="container">
+            <h2 class="text-uppercase fw-bold mb-4">LFC Recommande</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5>TEMPLE DE LA RENOMMÉE LFC</h5>
+                            <p class="small">Le Temple de la Renommée officiel célébrant les plus grands joueurs de l'histoire du Club</p>
+                            <button class="btn btn-danger mt-auto">DÉCOUVRIR PLUS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-danger text-white h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5>LFC TV</h5>
+                            <p class="small">Regardez du contenu exclusif de Liverpool FC</p>
+                            <button class="btn btn-white text-danger mt-auto">REGARDER MAINTENANT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-primary text-white h-100">
+                        <div class="card-body d-flex flex-column">
+                            <i class="fas fa-trophy fa-2x mb-3"></i>
+                            <h5>LIGUE DES CHAMPIONS</h5>
+                            <p class="small">Suivez le parcours de Liverpool dans la compétition d'élite européenne</p>
+                            <button class="btn btn-white text-primary mt-auto">EN SAVOIR PLUS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-secondary text-white h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5>ADHÉSION</h5>
+                            <p class="small">Rejoignez le programme d'adhésion officiel</p>
+                            <button class="btn btn-white text-secondary mt-auto">REJOINDRE MAINTENANT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Section -->
+    <section class="sponsorship py-5" style="background-color: #001a3d;">
+        <div class="container">
+            <h2 class="text-uppercase fw-bold mb-5 text-center text-white">Nos Partenaires</h2>
+            <div class="row g-4 align-items-center justify-content-center">
+                <!-- Row 1 -->
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/AIA_logo.svg/200px-AIA_logo.svg.png" class="img-fluid" alt="AIA" style="filter: brightness(0) invert(1);">
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/200px-Logo_NIKE.svg.png" class="img-fluid" alt="Nike" style="filter: brightness(0) invert(1);">
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.5rem;">KRAKEN</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">BETMGM</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">Alipay+</div>
+                </div>
+            </div>
+            <div class="row g-4 align-items-center justify-content-center mt-2">
+                <!-- Row 2 -->
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1rem;">Sports Illustrated</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1rem;">SI TICKETS</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/200px-Salesforce.com_logo.svg.png" class="img-fluid" alt="Salesforce" style="filter: brightness(0) invert(1);">
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">PRAVHA</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">ExpressVPN</div>
+                </div>
+            </div>
+            <div class="row g-4 align-items-center justify-content-center mt-2">
+                <!-- Row 3 -->
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">Castrol</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.5rem;">SIDIZ</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">Tiger</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">bppulse</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">MONSTER</div>
+                </div>
+            </div>
+            <div class="row g-4 align-items-center justify-content-center mt-2">
+                <!-- Row 4 -->
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">KUMHO TYRE</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.5rem;">$SPURS</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">EA SPORTS</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1.2rem;">STANLEY</div>
+                </div>
+                <div class="col-6 col-md-2 text-center sponsor-logo">
+                    <div class="text-white fw-bold" style="font-size: 1rem;">SiS<br><small>SCIENCE IN SPORT</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-danger text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Club</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Histoire</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Palmarès</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Joueurs</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Stade</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Billetterie</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Acheter des Billets</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Hospitalité</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Adhésion</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Abonnements</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Boutique</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Tenues</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Entraînement</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Mode</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Souvenirs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Suivez LFC</h6>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                    <p class="small text-white-50">© 2024 Liverpool Football Club. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Player Detail Carousel (left side - large cards)
+        var playerDetailSwiper = new Swiper('.playerDetailSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            allowTouchMove: false, // Disable direct swiping on detail view
+        });
+
+        // Initialize Player Cards Carousel (right side - small cards)
+        var playerCardsSwiper = new Swiper('.playerCardsSwiper', {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            navigation: {
+                nextEl: '.player-cards-next',
+                prevEl: '.player-cards-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 25,
+                },
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            // Synchronize with detail carousel
+            on: {
+                slideChange: function () {
+                    // Get the real index (accounting for loop mode)
+                    var realIndex = this.realIndex;
+                    // Update the detail carousel to match
+                    playerDetailSwiper.slideTo(realIndex);
+                },
+            },
+        });
+
+        // Add click event to each player card to select it
+        document.querySelectorAll('.playerCardsSwiper .swiper-slide').forEach(function(slide, index) {
+            slide.style.cursor = 'pointer';
+            slide.addEventListener('click', function() {
+                // Calculate the real index
+                var slideIndex = index % 10; // 10 is the total number of unique players
+                playerCardsSwiper.slideToLoop(slideIndex);
+                playerDetailSwiper.slideTo(slideIndex);
+            });
+        });
+
+        // Initialize Players Carousel (if exists from previous section)
+        var playersSwiper = new Swiper('.playersSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>

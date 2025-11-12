@@ -1,0 +1,372 @@
+/* Liverpool FC - Custom Styles */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #c8102e !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    filter: brightness(0) invert(1);
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0f0f0 !important;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    margin-top: 76px;
+    height: calc(100vh - 76px);
+    overflow: hidden;
+}
+
+.hero-section .carousel,
+.hero-section .carousel-inner,
+.hero-section .carousel-item {
+    height: 100%;
+}
+
+.hero-image {
+    height: 100%;
+}
+
+.hero-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-content h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Carousel fade effect */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+/* Carousel indicators styling */
+.carousel-indicators {
+    z-index: 3;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 3;
+    width: 5%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.btn-danger {
+    background-color: #c8102e;
+    border-color: #c8102e;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #a00d24;
+    border-color: #a00d24;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Match Cards */
+.match-card {
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.match-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Video Cards */
+.video-card {
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.02);
+}
+
+.video-overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
+    width: 100%;
+}
+
+/* News Cards */
+.news-card {
+    transition: all 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image-wrapper {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Player Cards */
+.player-feature {
+    transition: all 0.3s ease;
+}
+
+.player-feature:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Progress Bars */
+.progress-bar {
+    transition: width 0.6s ease;
+}
+
+/* Player Stats Table */
+.table thead {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.01);
+}
+
+/* Shop Section */
+.shop-section {
+    background: linear-gradient(135deg, #c8102e 0%, #a00d24 100%);
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #c8102e;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Photo Gallery */
+.photo-gallery .gallery-card {
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.photo-gallery .gallery-img {
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+}
+
+.photo-gallery .gallery-overlay {
+    background: rgba(200, 16, 46, 0);
+    opacity: 0;
+    transition: all 0.4s ease;
+    border-radius: 8px;
+}
+
+.photo-gallery .gallery-card:hover .gallery-overlay {
+    background: rgba(200, 16, 46, 0.85);
+    opacity: 1;
+}
+
+.photo-gallery .gallery-card:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+.photo-gallery .gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* LFC Recommends Cards */
+.lfc-recommends .card {
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.lfc-recommends .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Sponsorship Section */
+.sponsorship {
+    background-color: #001a3d;
+}
+
+.sponsorship .sponsor-logo {
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.sponsorship .sponsor-logo:hover {
+    transform: translateY(-5px);
+}
+
+.sponsorship img {
+    max-width: 120px;
+    height: auto;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.sponsorship img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.sponsorship .text-white {
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.sponsorship .sponsor-logo:hover .text-white {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Memorial Section */
+.memorial {
+    background-color: #1a1a1a;
+}
+
+.memorial i {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #c8102e 0%, #a00d24 100%);
+}
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff !important;
+    transform: translateX(5px);
+}
+
+/* Badges */
+.badge {
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .match-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c8102e;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a00d24;
+}
