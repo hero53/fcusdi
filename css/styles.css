@@ -264,7 +264,7 @@ body {
 }
 
 .photo-gallery .gallery-card:hover .gallery-overlay {
-    background: rgba(200, 16, 46, 0.85);
+    background: rgba(0, 0, 0, 0.656);
     opacity: 1;
 }
 
