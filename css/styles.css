@@ -13,9 +13,9 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.navbar-brand img {
+/* .navbar-brand img {
     filter: brightness(0) invert(1);
-}
+} */
 
 .navbar-nav .nav-link {
     color: #ffffff !important;
@@ -161,6 +161,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* News Card Hover Effect */
+.news-card-hover {
+    min-height: 400px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.news-card-front {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.news-card-back {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.news-card-hover:hover .news-card-front {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.news-card-hover:hover .news-card-back {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
 }
 
 /* Player Cards */
