@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - FC USDI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000000;">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="FC USDI" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: #eba80e;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="index.html" style="color: #eba80e;">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="a-propos.html" style="color: #eba80e;">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="joueurs.html" style="color: #eba80e;">Joueurs</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="historique-matches.html" style="color: #eba80e;">Historique des matches</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="equipe-dirigeante.html" style="color: #eba80e;">Équipe dirigeante</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase active" href="contact.html" style="color: #eba80e;">Contactez nous</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+     <section class="hero-section position-relative" style="margin-top: 76px; height: 400px; overflow: hidden;">
+        <div class="position-absolute w-100 h-100" style="z-index: 1;">
+            <img src="https://fcusdi.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-06-at-22.51.40-scaled.jpeg"
+                 class="w-100 h-100"
+                 style="object-fit: cover; filter: brightness(0.5);"
+                 alt="FC USDI">
+        </div>
+        <div class="position-absolute w-100 text-center" style="top: 50%; transform: translateY(-50%); z-index: 2;">
+            <h1 class="display-3 fw-bold mb-0" style="color: #eba80e;">Contact</h1>
+        </div>
+        <div class="position-absolute bottom-0 w-100" style="z-index: 2;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" style="display: block;">
+                <path fill="#ffffff" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <h2 class="fw-bold mb-4">Envoyez-nous un message</h2>
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">Prénom *</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Nom *</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Sujet *</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="" selected disabled>Choisissez un sujet</option>
+                                    <option value="information">Demande d'information</option>
+                                    <option value="billetterie">Billetterie</option>
+                                    <option value="partenariat">Partenariat</option>
+                                    <option value="recrutement">Recrutement</option>
+                                    <option value="media">Médias & Presse</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" rows="6" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        Je souhaite recevoir la newsletter du FC USDI
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-lg px-5" style="background-color: #eba80e; color: #000000; border: none;">
+                                    Envoyer <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <h2 class="fw-bold mb-4">Informations de Contact</h2>
+
+                    <!-- Address -->
+                    <div class="card mb-4 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="me-3">
+                                    <i class="fas fa-map-marker-alt fa-2x" style="color: #eba80e;"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-2">Adresse</h5>
+                                    <p class="text-muted mb-0">
+                                        Stade Municipal<br>
+                                        Cocody, Abidjan<br>
+                                        Côte d'Ivoire
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="card mb-4 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="me-3">
+                                    <i class="fas fa-phone fa-2x" style="color: #eba80e;"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-2">Téléphone</h5>
+                                    <p class="text-muted mb-0">
+                                        +225 27 22 XX XX XX<br>
+                                        +225 07 XX XX XX XX
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="card mb-4 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="me-3">
+                                    <i class="fas fa-envelope fa-2x" style="color: #eba80e;"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-2">Email</h5>
+                                    <p class="text-muted mb-0">
+                                        contact@fcusdi.com<br>
+                                        info@fcusdi.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="me-3">
+                                    <i class="fas fa-share-alt fa-2x" style="color: #eba80e;"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-3">Réseaux Sociaux</h5>
+                                    <div class="d-flex gap-3">
+                                        <a href="#" class="btn btn-sm" style="background-color: #000000; color: #eba80e;">
+                                            <i class="fab fa-facebook fa-lg"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm" style="background-color: #000000; color: #eba80e;">
+                                            <i class="fab fa-twitter fa-lg"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm" style="background-color: #000000; color: #eba80e;">
+                                            <i class="fab fa-instagram fa-lg"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm" style="background-color: #000000; color: #eba80e;">
+                                            <i class="fab fa-youtube fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Horaires d'Ouverture</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <h5 class="fw-bold mb-3" style="color: #eba80e;">
+                                        <i class="fas fa-building me-2"></i>Bureau Administratif
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><strong>Lundi - Vendredi:</strong> 9h00 - 18h00</li>
+                                        <li class="mb-2"><strong>Samedi:</strong> 9h00 - 13h00</li>
+                                        <li class="mb-2"><strong>Dimanche:</strong> Fermé</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="fw-bold mb-3" style="color: #eba80e;">
+                                        <i class="fas fa-ticket-alt me-2"></i>Billetterie
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><strong>Lundi - Vendredi:</strong> 10h00 - 17h00</li>
+                                        <li class="mb-2"><strong>Jours de Match:</strong> 10h00 - Mi-temps</li>
+                                        <li class="mb-2"><strong>Dimanche:</strong> Fermé</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Notre Localisation</h2>
+            <div class="ratio ratio-21x9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.0958089076747!2d-3.9877262246556267!3d5.404179694605996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebfb6a9e0f89%3A0x5c2f0dfaac5be3aa!2sCocody%2C%20Abidjan%2C%20C%C3%B4te%20d&#39;Ivoire!5e0!3m2!1sfr!2sma!4v1704982837162!5m2!1sfr!2sma"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Questions Fréquentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Comment puis-je acheter des billets?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Vous pouvez acheter des billets en ligne sur notre site web, à notre billetterie au stade,
+                                    ou auprès de nos points de vente agréés. Les billets sont disponibles jusqu'à 2 heures avant le coup d'envoi.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Comment devenir membre du club?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Pour devenir membre du FC USDI, remplissez le formulaire d'adhésion disponible dans la section
+                                    "Adhésion" de notre site web. Vous bénéficierez de nombreux avantages exclusifs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Organisez-vous des visites du stade?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, nous organisons des visites guidées du stade tous les mercredis et samedis.
+                                    Contactez-nous pour réserver votre visite à l'avance.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Comment puis-je rejoindre l'académie du club?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Notre académie organise des sessions de recrutement deux fois par an (janvier et juillet).
+                                    Envoyez-nous un email à academie@fcusdi.com pour plus d'informations.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-5" style="background-color: #000000 !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Club</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="a-propos.html" class="text-white-50 text-decoration-none">Histoire</a></li>
+                        <li><a href="a-propos.html" class="text-white-50 text-decoration-none">Palmarès</a></li>
+                        <li><a href="joueurs.html" class="text-white-50 text-decoration-none">Joueurs</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Stade</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Billetterie</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Acheter des Billets</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Hospitalité</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Adhésion</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Abonnements</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Boutique</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Tenues</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Entraînement</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Mode</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Souvenirs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Suivez LFC</h6>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                    <p class="small text-white-50">© 2024 FC USDI Football Club. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Show success message (you would normally send this to a server)
+            alert('Merci ' + firstName + ' ' + lastName + '! Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.');
+
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

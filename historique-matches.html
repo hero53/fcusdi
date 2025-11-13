@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique des Matches - FC USDI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000000;">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="FC USDI" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: #eba80e;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="index.html" style="color: #eba80e;">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="a-propos.html" style="color: #eba80e;">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="joueurs.html" style="color: #eba80e;">Joueurs</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase active" href="historique-matches.html" style="color: #eba80e;">Historique des matches</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="equipe-dirigeante.html" style="color: #eba80e;">Équipe dirigeante</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="contact.html" style="color: #eba80e;">Contactez nous</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative" style="margin-top: 76px; height: 400px; overflow: hidden;">
+        <div class="position-absolute w-100 h-100" style="z-index: 1;">
+            <img src="https://fcusdi.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-06-at-22.51.40-scaled.jpeg"
+                 class="w-100 h-100"
+                 style="object-fit: cover; filter: brightness(0.5);"
+                 alt="FC USDI">
+        </div>
+        <div class="position-absolute w-100 text-center" style="top: 50%; transform: translateY(-50%); z-index: 2;">
+            <h1 class="display-3 fw-bold mb-0" style="color: #eba80e;">Matches</h1>
+        </div>
+        <div class="position-absolute bottom-0 w-100" style="z-index: 2;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" style="display: block;">
+                <path fill="#ffffff" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="py-4 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <select class="form-select" id="seasonFilter">
+                        <option selected>Saison 2024/2025</option>
+                        <option>Saison 2023/2024</option>
+                        <option>Saison 2022/2023</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <select class="form-select" id="competitionFilter">
+                        <option selected>Toutes les compétitions</option>
+                        <option>Premier League</option>
+                        <option>Ligue des Champions</option>
+                        <option>FA Cup</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select" id="resultFilter">
+                        <option selected>Tous les résultats</option>
+                        <option>Victoires</option>
+                        <option>Nuls</option>
+                        <option>Défaites</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matches History -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Match Card 1 -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header" style="background-color: #000000;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge" style="background-color: #eba80e; color: #000000;">Premier League</span>
+                                <span class="text-white small">15 Janvier 2025</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="assets/images/logo/logo.png" width="50" alt="FC USDI" class="mb-2">
+                                    <h5 class="fw-bold mb-0">FC USDI</h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h2 class="fw-bold mb-0" style="color: #eba80e;">3 - 1</h2>
+                                    <span class="badge bg-success mt-2">VICTOIRE</span>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/100px-Everton_FC_logo.svg.png" width="50" alt="Everton" class="mb-2">
+                                    <h5 class="fw-bold mb-0">Everton</h5>
+                                </div>
+                            </div>
+                            <hr class="my-3">
+                            <div class="small text-muted">
+                                <i class="fas fa-map-marker-alt me-2"></i>Anfield Stadium
+                                <span class="float-end"><i class="fas fa-users me-2"></i>52,000 spectateurs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match Card 2 -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header" style="background-color: #000000;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge" style="background-color: #eba80e; color: #000000;">Ligue des Champions</span>
+                                <span class="text-white small">08 Janvier 2025</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="assets/images/logo/logo.png" width="50" alt="FC USDI" class="mb-2">
+                                    <h5 class="fw-bold mb-0">FC USDI</h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h2 class="fw-bold mb-0" style="color: #eba80e;">1 - 1</h2>
+                                    <span class="badge bg-warning text-dark mt-2">NUL</span>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/100px-FC_Barcelona_%28crest%29.svg.png" width="50" alt="Barcelona" class="mb-2">
+                                    <h5 class="fw-bold mb-0">Barcelona</h5>
+                                </div>
+                            </div>
+                            <hr class="my-3">
+                            <div class="small text-muted">
+                                <i class="fas fa-map-marker-alt me-2"></i>Camp Nou
+                                <span class="float-end"><i class="fas fa-users me-2"></i>85,000 spectateurs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match Card 3 -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header" style="background-color: #000000;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge" style="background-color: #eba80e; color: #000000;">Premier League</span>
+                                <span class="text-white small">02 Janvier 2025</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/100px-Manchester_City_FC_badge.svg.png" width="50" alt="Man City" class="mb-2">
+                                    <h5 class="fw-bold mb-0">Man City</h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h2 class="fw-bold mb-0" style="color: #eba80e;">2 - 0</h2>
+                                    <span class="badge bg-danger mt-2">DÉFAITE</span>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="assets/images/logo/logo.png" width="50" alt="FC USDI" class="mb-2">
+                                    <h5 class="fw-bold mb-0">FC USDI</h5>
+                                </div>
+                            </div>
+                            <hr class="my-3">
+                            <div class="small text-muted">
+                                <i class="fas fa-map-marker-alt me-2"></i>Etihad Stadium
+                                <span class="float-end"><i class="fas fa-users me-2"></i>53,400 spectateurs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match Card 4 -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header" style="background-color: #000000;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge" style="background-color: #eba80e; color: #000000;">FA Cup</span>
+                                <span class="text-white small">27 Décembre 2024</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="assets/images/logo/logo.png" width="50" alt="FC USDI" class="mb-2">
+                                    <h5 class="fw-bold mb-0">FC USDI</h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h2 class="fw-bold mb-0" style="color: #eba80e;">4 - 2</h2>
+                                    <span class="badge bg-success mt-2">VICTOIRE</span>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/e/e5/Logo_West_Bromwich_Albion.svg/langfr-330px-Logo_West_Bromwich_Albion.svg.png" width="50" alt="West Brom" class="mb-2">
+                                    <h5 class="fw-bold mb-0">West Brom</h5>
+                                </div>
+                            </div>
+                            <hr class="my-3">
+                            <div class="small text-muted">
+                                <i class="fas fa-map-marker-alt me-2"></i>Anfield Stadium
+                                <span class="float-end"><i class="fas fa-users me-2"></i>50,000 spectateurs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match Card 5 -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header" style="background-color: #000000;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge" style="background-color: #eba80e; color: #000000;">Premier League</span>
+                                <span class="text-white small">20 Décembre 2024</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="assets/images/logo/logo.png" width="50" alt="FC USDI" class="mb-2">
+                                    <h5 class="fw-bold mb-0">FC USDI</h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h2 class="fw-bold mb-0" style="color: #eba80e;">2 - 1</h2>
+                                    <span class="badge bg-success mt-2">VICTOIRE</span>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/100px-Chelsea_FC.svg.png" width="50" alt="Chelsea" class="mb-2">
+                                    <h5 class="fw-bold mb-0">Chelsea</h5>
+                                </div>
+                            </div>
+                            <hr class="my-3">
+                            <div class="small text-muted">
+                                <i class="fas fa-map-marker-alt me-2"></i>Anfield Stadium
+                                <span class="float-end"><i class="fas fa-users me-2"></i>52,000 spectateurs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match Card 6 -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header" style="background-color: #000000;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge" style="background-color: #eba80e; color: #000000;">Ligue des Champions</span>
+                                <span class="text-white small">15 Décembre 2024</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Benfica_Logo.svg/100px-Benfica_Logo.svg.png" width="50" alt="Benfica" class="mb-2">
+                                    <h5 class="fw-bold mb-0">Benfica CI</h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h2 class="fw-bold mb-0" style="color: #eba80e;">1 - 1</h2>
+                                    <span class="badge bg-warning text-dark mt-2">NUL</span>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="assets/images/logo/logo.png" width="50" alt="FC USDI" class="mb-2">
+                                    <h5 class="fw-bold mb-0">FC USDI</h5>
+                                </div>
+                            </div>
+                            <hr class="my-3">
+                            <div class="small text-muted">
+                                <i class="fas fa-map-marker-alt me-2"></i>Stade de Benfica
+                                <span class="float-end"><i class="fas fa-users me-2"></i>28,000 spectateurs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Statistiques de la Saison</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center p-4" style="background-color: #000000; border-radius: 10px;">
+                        <i class="fas fa-check-circle fa-2x mb-3" style="color: #eba80e;"></i>
+                        <h2 class="fw-bold" style="color: #eba80e;">18</h2>
+                        <p class="text-white mb-0">Victoires</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center p-4" style="background-color: #eba80e; border-radius: 10px;">
+                        <i class="fas fa-equals fa-2x mb-3" style="color: #000000;"></i>
+                        <h2 class="fw-bold" style="color: #000000;">6</h2>
+                        <p class="text-white mb-0">Nuls</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center p-4" style="background-color: #000000; border-radius: 10px;">
+                        <i class="fas fa-times-circle fa-2x mb-3" style="color: #eba80e;"></i>
+                        <h2 class="fw-bold" style="color: #eba80e;">4</h2>
+                        <p class="text-white mb-0">Défaites</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center p-4" style="background-color: #eba80e; border-radius: 10px;">
+                        <i class="fas fa-futbol fa-2x mb-3" style="color: #000000;"></i>
+                        <h2 class="fw-bold" style="color: #000000;">54</h2>
+                        <p class="text-white mb-0">Buts marqués</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-5" style="background-color: #000000 !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Club</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="a-propos.html" class="text-white-50 text-decoration-none">Histoire</a></li>
+                        <li><a href="a-propos.html" class="text-white-50 text-decoration-none">Palmarès</a></li>
+                        <li><a href="joueurs.html" class="text-white-50 text-decoration-none">Joueurs</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Stade</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Billetterie</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Acheter des Billets</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Hospitalité</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Adhésion</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Abonnements</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Boutique</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Tenues</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Entraînement</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Mode</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Souvenirs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase mb-3">Suivez LFC</h6>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                    <p class="small text-white-50">© 2024 FC USDI Football Club. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
